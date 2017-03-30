@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 3</title>
+    <script type="text/javascript">
+    /*    Your code here  */   
+    function  checkForm() {
+      if ((document.getElementById("optstraw").checked == false) && (document.getElementById("optblue").checked == false)){
+        window.alert("You must check a box!");
+        return false;
+    }
+    else
+        {return true;}}
+    </script>
+</head>
+<body>
+    <header>
+  <nav id="nav">
+  <ul class="topnav" id="myTopnav">
+    <li><a href="challenge1.html">challenge1</a></li>
+    <li><a href="challenge2.html">challenge2</a></li>
+    <li><a href="challenge3.html">challenge3</a></li>
+    <li><a href="challenge4.html">challenge4</a></li>
+    <li><a href="challenge5.html">challenge5</a></li>
+  </ul>
+</nav>
+</header>
+	<form window.location = "http://www.cnn.com/" onsubmit= 
+	"return checkForm()">
+  <fieldset>
+    <legend>Radio buttons and Check Boxes</legend>
+    <p>
+      What's your favorite berry?: 
+      <label>
+        <input type="radio" value="male" name="favfruit" id="optstraw">
+        Strawberries
+      </label>
+      <label>
+        <input type="radio" value="female" name="favfruit" id="optblue">
+        Blueberries
+      </label>
+    </p>
+  </fieldset>
+
+  <input type="submit" value="Check it out!">
+</form>
+</body>
+</html>
